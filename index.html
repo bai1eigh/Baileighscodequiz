@@ -11,11 +11,11 @@
 <body>
     <div class="container">
 
-        <div id="startpage">
+        <div id="frontpage">
             <h2>A timed quiz on JavaScript fundamentals that stores high scores</h2>
             <h2>so that I can gauge my progress compared to my peers</h2>
         <button id="startbtn">Start Code Quiz</button>
-        <button id="frontPageLeaderboard" onclick="showHighscore()">Leaderboard</button>
+        <button id="frontPageLeaderboard" onclick="showLeaderboard()">Leaderboard</button>
         </div>
 
         <div id="quiz">
@@ -27,12 +27,27 @@
         <button id="4" onclick="checkAnswer('4')">4</button>
         <div id="result"></div>
 </div>
-    <div>
+    <div id="End">
 <!----GIVEN I am taking a code quiz WHEN I click the start button-->
-        <button class ="START">Start</button>
-    <p id='countdown'>Timer</p>
+<div id="finalScore">
+    <input type="text" size = "40" placeholder="ID" name= "ID" Id="ID"/>
+    <button id="submitScore">Submit Score</button>
 </div>
-
+<div id=highscoreContainer>
+    <div id="high-scorePage">
+        <div id="highscore-header">
+            <h3>User Initials</h3>
+            <h3>Score</h3>
+        </div>
+        <div id = "highscore-initials"></div>
+        <div id = "highscore-score"></div>
+    </div>
+    <div id="endGameBtns">
+        <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+        <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+    </div>
+</div>
+</div>
 <script src="develop/script.js"></script>
 </body>
 </html>
