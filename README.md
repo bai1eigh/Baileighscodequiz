@@ -2,4 +2,5 @@
 
 // insert image of site 
 
-// insert link to repositry and github page 
+// https://bai1eigh.github.io/Baileighscodequiz/
+// https://github.com/bai1eigh/Baileighscodequiz
