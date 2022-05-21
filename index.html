@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="develop/style.css"></script>
-  
+    <link rel = "stylsheet" href="/develop/style.css">
     <title>Coding Quiz</title>
 </head>
+<!---Body of the html-->
 <body>
-    <div>
-    <h1>Coding Quiz Challenge</h1>
-    <p>A timed quiz on JavaScript fundamentals that stores high scores
-        so that I can gauge my progress compared to my peers</p>
+    <div class="container">
+
+        <div id="startpage">
+            <h2>A timed quiz on JavaScript fundamentals that stores high scores</h2>
+            <h2>so that I can gauge my progress compared to my peers</h2>
+        <button id="startbtn">Start Code Quiz</button>
+        <button id="frontPageLeaderboard" onclick="showHighscore()">Leaderboard</button>
+        </div>
+
+        <div id="quiz">
+        <div id="timer">Time</div>
+        <div id="questions"><p>where the questions go</p></div>
+        <button id="1" onclick="checkAnswer('1')">1</button>
+        <button id="2" onclick="checkAnswer('2')">2</button>
+        <button id="3" onclick="checkAnswer('3')">3</button>
+        <button id="4" onclick="checkAnswer('4')">4</button>
+        <div id="result"></div>
+</div>
     <div>
 <!----GIVEN I am taking a code quiz WHEN I click the start button-->
         <button class ="START">Start</button>
