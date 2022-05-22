@@ -12,39 +12,56 @@
 </head>
 <!---Body of the html-->
 <body>
-    <div class="container">
+    
+    <!---info box -->
 
-        <div id="startPage">
-            <h1 class="text-center" >Coding Quiz Challenge</h1>
-            <h2 class="text-center">A timed quiz on JavaScript fundamentals that stores high scores</h2>
-            <h2 class="text-center">so that I can gauge my progress compared to my peers</h2>
+    <div class="info_box">
+        <div class="info_title">
+            <span id="startPage">
+                <!--<h1  class="text-center">Coding Quiz Challenge</h1>
+                <h2 class="text-center">A timed quiz on JavaScript fundamentals that stores high scores </h2>
+                <h2 class="text-center"> so that I can gauge my progress compared to my peers</h2>-->
 
-            <div class="text-center">
-       <!---startpage buttons-->
-            <button  type="button" class="btn btn-primary btn-lg">Start</button>
-        
-
-             <button  type="button" class="btn btn-primary btn-lg">High Scores</button>
+                <div class="text-center">
+            </span>
+<div class="info_list">
+    <div class="info">A timed quiz on JavaScript fundamentals that stores 
+        high scores so that I can gauge my progress compared to my peers</div>
+    <div class="info">1. You have 75 seconds to get through the quiz</div>
+    <div class="info">2. Time reduces if an answer is marked inccorrectly</div>
+</div>
+<!---startpage buttons-->
+<div class="bottons">
+        <button  type="button" id= startbtn class="btn btn-primary btn-lg">Start Quiz</button>
+        <button  type="button" class="btn btn-primary btn-lg">High Scores</button>
+        <button  type="button" class="btn btn-primary btn-lg">Continue</button>
         </div>
     </div>
-            <!--background color--->
-            <style type="text/css">
-                body { background: orange !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-             </style>
+    </div>
 
 <!---countdown commented out--->
 <!--<div id="countdown"></div>--->
 
 <!---answer buttons-->
 <div class="btn-group-vertical">
-    <div id="timer">Time left: <div id="countdown"></div></div>
+    <div id="timer">Time: <div id="countdown"></div></div>
     <div id="questions"><p>Questions Placeholder</p></div>
         <button id="a" onclick="checkAnswer('a')">A</button>
         <button id="b" onclick="checkAnswer('b')">B</button>
         <button id="c" onclick="checkAnswer('c')">C</button>
         <button id="d" onclick="checkAnswer('d')">D</button>
+
     <div id="result"></div>
-           
+</div>
+<div id="gameOver">
+
+    <!---alerts--->
+    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+
+
+    <!---the very end-->
 </div>
 <script src="develop/script.js"></script>
 </body>
