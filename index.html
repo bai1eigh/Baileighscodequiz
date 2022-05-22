@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel = "stylesheet" href="/develop/style.css"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel = "stylesheet" href="/develop/style.css">
 </head>
 <!---Body of the html-->
 <body>
+    <!---background color-->
     
     <!---info box -->
 
     <div class="info_box">
         <div class="info_title">
             <span id="startPage">
+                
                 <!--<h1  class="text-center">Coding Quiz Challenge</h1>
                 <h2 class="text-center">A timed quiz on JavaScript fundamentals that stores high scores </h2>
                 <h2 class="text-center"> so that I can gauge my progress compared to my peers</h2>-->
@@ -31,7 +33,7 @@
     <div class="info">2. Time reduces if an answer is marked inccorrectly</div>
 </div>
 <!---startpage buttons-->
-<div class="bottons">
+<div class="d-flex justify-content-center align-items-center vh-100" id="buttons" >
         <button  type="button" id= startbtn class="btn btn-primary btn-lg">Start Quiz</button>
         <button  type="button" class="btn btn-primary btn-lg">High Scores</button>
         <button  type="button" class="btn btn-primary btn-lg">Continue</button>
