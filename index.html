@@ -12,12 +12,12 @@
 </head>
 <!---Body of the html-->
 <body>
-            <style>
-                .full-screen{
-                    width: 100vw ;
-                    height: 100vh
-                }
-            </style>
+  <!---  <style>
+        .full-screen{
+            width: 100vw ;
+            height: 100vh
+        }
+    </style>-->
 
 <!---card to start-->
     <div class= 
@@ -36,7 +36,7 @@
         <h5 class="card-title">Coding Quiz</h5>
 
         <h6 
-        class="card-subtitle mb-2 text-muted">
+        class="card-subtitle mb-2 text-muted mx-4">
         A timed quiz on JavaScript
         fundamentals that stores 
         high scores so that I can 
@@ -54,31 +54,90 @@
       </div>
     </div>
 
-<!---startpage buttons-->
-    </div>
-    </div>
-</div>
-<!---countdown commented out--->
-<!--<div id="countdown"></div>--->
+    <!---Quiz Box-->
+    <div class="card" class="quiz_box">
+        <div class="card-header">
+        <div class="text-left" >JavaScript Challenge</div>
 
-<!---answer buttons-->
-<div class="btn-group-vertical">
-    <div id="timer">Time: <div id="countdown"></div></div>
-    <div id="questions"><p>Questions Placeholder</p></div>
-        <button id="a" onclick="checkAnswer('a')">A</button>
-        <button id="b" onclick="checkAnswer('b')">B</button>
-        <button id="c" onclick="checkAnswer('c')">C</button>
-        <button id="d" onclick="checkAnswer('d')">D</button>
+         <!---timer text-->
+         <div class="Timer">
+            <div class="text-right" class="timer_sec" class=" time_text"> Time Left: 75</div>
+    
+        </div>
+        </div>
 
-    <div id="result"></div>
+        <div class="card-body">
+            <section>
+                <div class="que_text">
+        <span class="font-weight-bold mx-1">Commonly used date types DO Not include: </span>
+                </div>
+        
+                <div class="option_list">
+
+                    <div class="option">
+                    <span type="button" class="btn btn-outline-primary">Strings</span>
+                </div>
+        
+                <div class="option">
+                    <spantype="button" class="btn btn-outline-primary" >Booleans</span>
+                </div>
+        
+                    <div class="option">
+                        <span type="button" class="btn btn-outline-primary">Alerts</span>
+                    </div>
+        
+                        <div class="option">
+                            <span type="button" class="btn btn-outline-primary">Numbers</span>
+                        </div>
+        
+                </div>
+            </section>
+          
+        </div>
+
+        <div class="card-footer text-muted">
+            <footer>
+                <div class="total_que">
+                    <span class="d-flex flex-row "><p>2</p><p>of</p><p>5</p></span></div>
+                    <button type="button" class="btn btn-primary">Next</button>
+                </footer>
+        </div>
+      </div>
+
+<!---results-->
+
+<div class="card" class="quiz_box ">
+    <div class="card-header">
+    <div class="text-left" >JavaScript Challenge</div>
 </div>
+     
+<!---card coded-->
+
+<div class="result">
+    <div class="complete_text">
+        You've Completed the Quiz
+    </div>
+   
+
+    <div class="card-footer text-muted">
+        <div class="score_text">
+
+            <span class="d-flex flex-row "><p>2 </p><p>out of</p><p> 5 </p></span>
+          </div>
+        <div class="buttons">
+            <button type="button" class="btn btn-primary">Replay</button>
+            <button type="button" class="btn btn-primary">Quit</button>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
 <div id="gameOver">
-
-    <!---alerts--->
-    <div id="liveAlertPlaceholder"></div>
-<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
-
-
 
     <!---the very end-->
 </div>
