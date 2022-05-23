@@ -12,35 +12,52 @@
 </head>
 <!---Body of the html-->
 <body>
-    <!---background color-->
+            <style>
+                .full-screen{
+                    width: 100vw ;
+                    height: 100vh
+                }
+            </style>
+
+<!---card to start-->
+    <div class= 
+    "full-screen
+    d-flex
+    align-items-center
+    justify-content-center
+    align-items-center
+    text-center
+    flex-column">
+
+    <div class="card border-dark mb-3" class="card" 
+    style="height: 15rem;" style="max-width:25rem;" >
+    <div class = "text-center" class="card-body">
     
-    <!---info box -->
+        <h5 class="card-title">Coding Quiz</h5>
 
-    <div class="info_box">
-        <div class="info_title">
-            <span id="startPage">
-                
-                <!--<h1  class="text-center">Coding Quiz Challenge</h1>
-                <h2 class="text-center">A timed quiz on JavaScript fundamentals that stores high scores </h2>
-                <h2 class="text-center"> so that I can gauge my progress compared to my peers</h2>-->
+        <h6 
+        class="card-subtitle mb-2 text-muted">
+        A timed quiz on JavaScript
+        fundamentals that stores 
+        high scores so that I can 
+        gauge my progress compared 
+        to my peers
+        </h6>
 
-                <div class="text-center">
-            </span>
-<div class="info_list">
-    <div class="info">A timed quiz on JavaScript fundamentals that stores 
-        high scores so that I can gauge my progress compared to my peers</div>
-    <div class="info">1. You have 75 seconds to get through the quiz</div>
-    <div class="info">2. Time reduces if an answer is marked inccorrectly</div>
-</div>
+        <p class="info_list">1. You have 75 seconds to get through the quiz</p>
+        <p class="info_list">2. Time reduces if an answer is marked incorrectly</p>
+        <div class = "text-center" class="d-flex flex-row" id="buttons">
+            <button  type="button" class="btn btn-primary btn-sm">High Scores</button>
+            <button  type="button" id= startbtn class="btn btn-primary btn-sm">Start Quiz</button>
+            <button  type="button" class="btn btn-primary btn-sm">Continue</button>
+            </div>
+      </div>
+    </div>
+
 <!---startpage buttons-->
-<div class="d-flex justify-content-center align-items-center vh-100" id="buttons" >
-        <button  type="button" id= startbtn class="btn btn-primary btn-lg">Start Quiz</button>
-        <button  type="button" class="btn btn-primary btn-lg">High Scores</button>
-        <button  type="button" class="btn btn-primary btn-lg">Continue</button>
-        </div>
     </div>
     </div>
-
+</div>
 <!---countdown commented out--->
 <!--<div id="countdown"></div>--->
 
